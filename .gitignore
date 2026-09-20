@@ -23,6 +23,7 @@ gh-token
 *.key
 *.deb
 /dist/
+/dist/deb-root/
 /debian/shadow-convert/
 /debian/.debhelper/
 /debian/files
