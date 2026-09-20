@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=Shadow Convert
+GenericName=Media Converter
+Comment=Convert video, audio, and images locally
+Exec=shadow-convert %F
+Icon=shadow-convert
+Terminal=false
+Categories=AudioVideo;Utility;
+Keywords=convert;ffmpeg;video;audio;image;mp4;mp3;
+StartupNotify=true
+StartupWMClass=com.shadowfetch.Convert
+MimeType=video/mp4;video/x-matroska;video/webm;audio/mpeg;audio/flac;audio/x-wav;image/png;image/jpeg;image/webp;

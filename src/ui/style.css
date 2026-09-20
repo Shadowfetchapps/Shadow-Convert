@@ -1,0 +1,60 @@
+.brand-kicker {
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  font-size: 12px;
+  opacity: 0.55;
+}
+
+.brand-title {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.app-icon {
+  min-width: 48px;
+  min-height: 48px;
+}
+
+.drop-zone {
+  border-radius: 18px;
+  border: 2px dashed alpha(currentColor, 0.28);
+  background-color: alpha(currentColor, 0.04);
+  min-height: 220px;
+  padding: 28px;
+}
+
+.drop-zone.drop-hover {
+  border-color: @accent_bg_color;
+  background-color: alpha(@accent_bg_color, 0.16);
+}
+
+.drop-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.convert-button {
+  min-height: 48px;
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: 0.04em;
+}
+
+.meta-key {
+  opacity: 0.65;
+  font-weight: 600;
+}
+
+.file-name {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.kind-badge {
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background-color: alpha(@accent_bg_color, 0.18);
+}
