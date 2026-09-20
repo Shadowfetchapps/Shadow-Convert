@@ -1,0 +1,69 @@
+[package]
+name = "shadow-convert"
+version = "1.0.0"
+edition = "2021"
+description = "Convert video, audio, and images locally on Linux"
+license = "MIT"
+repository = "https://github.com/ShadowfetchLinux/Shadow-Convert"
+homepage = "https://github.com/ShadowfetchLinux/Shadow-Convert"
+authors = ["Shadow Convert contributors"]
+readme = "README.md"
+keywords = ["linux", "gtk4", "ffmpeg", "converter", "desktop"]
+categories = ["multimedia", "gui"]
+default-run = "shadow-convert"
+
+[lib]
+name = "shadow_convert"
+path = "src/lib.rs"
+
+[[bin]]
+name = "shadow-convert"
+path = "src/main.rs"
+
+[dependencies]
+gtk = { version = "0.9", package = "gtk4", features = ["v4_14"] }
+adw = { version = "0.7", package = "libadwaita", features = ["v1_5"] }
+glib = "0.20"
+gio = "0.20"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+dirs = "6"
+thiserror = "2"
+chrono = { version = "0.4", default-features = false, features = ["clock", "std"] }
+which = "7"
+libc = "0.2"
+open = "5"
+uuid = { version = "1", features = ["v4"] }
+async-channel = "2"
+
+[dev-dependencies]
+tempfile = "3"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = "debuginfo"
+
+[package.metadata.deb]
+name = "shadow-convert"
+maintainer = "Shadow Convert contributors <209457103+ShadowfetchLinux@users.noreply.github.com>"
+copyright = "2026 Shadow Convert contributors"
+license-file = ["LICENSE", "0"]
+extended-description = """Native GTK4 / libadwaita desktop app that converts video, audio, and images locally with FFmpeg. No account, no telemetry, no browser."""
+section = "video"
+priority = "optional"
+depends = "$auto, ffmpeg, libgtk-4-1, libadwaita-1-0"
+assets = [
+    ["target/release/shadow-convert", "usr/bin/", "755"],
+    ["data/com.shadowfetch.Convert.desktop", "usr/share/applications/", "644"],
+    ["data/icons/hicolor/scalable/apps/shadow-convert.svg", "usr/share/icons/hicolor/scalable/apps/", "644"],
+    ["data/icons/hicolor/16x16/apps/shadow-convert.png", "usr/share/icons/hicolor/16x16/apps/", "644"],
+    ["data/icons/hicolor/24x24/apps/shadow-convert.png", "usr/share/icons/hicolor/24x24/apps/", "644"],
+    ["data/icons/hicolor/32x32/apps/shadow-convert.png", "usr/share/icons/hicolor/32x32/apps/", "644"],
+    ["data/icons/hicolor/48x48/apps/shadow-convert.png", "usr/share/icons/hicolor/48x48/apps/", "644"],
+    ["data/icons/hicolor/64x64/apps/shadow-convert.png", "usr/share/icons/hicolor/64x64/apps/", "644"],
+    ["data/icons/hicolor/128x128/apps/shadow-convert.png", "usr/share/icons/hicolor/128x128/apps/", "644"],
+    ["data/icons/hicolor/256x256/apps/shadow-convert.png", "usr/share/icons/hicolor/256x256/apps/", "644"],
+    ["data/icons/hicolor/512x512/apps/shadow-convert.png", "usr/share/icons/hicolor/512x512/apps/", "644"],
+    ["README.md", "usr/share/doc/shadow-convert/", "644"],
+]
