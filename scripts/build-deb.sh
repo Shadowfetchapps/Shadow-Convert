@@ -42,7 +42,7 @@ Architecture: ${ARCH}
 Maintainer: Shadow Convert contributors <209457103+ShadowfetchLinux@users.noreply.github.com>
 Depends: ffmpeg, libgtk-4-1, libadwaita-1-0
 Installed-Size: ${SIZE}
-Homepage: https://github.com/ShadowfetchLinux/Shadow-Convert
+Homepage: https://github.com/Shadowfetchapps/Shadow-Convert
 Description: Convert video, audio, and images locally
  Native GTK4 / libadwaita desktop application that converts
  video, audio, and images with FFmpeg. No account or telemetry.

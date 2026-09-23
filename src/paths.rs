@@ -6,7 +6,7 @@ pub const APP_ID: &str = "com.shadowfetch.Convert";
 pub const APP_NAME: &str = "Shadow Convert";
 pub const APP_ICON: &str = "shadow-convert";
 pub const APP_VERSION: &str = env!("CARGO_PKG_VERSION");
-pub const APP_WEBSITE: &str = "https://github.com/ShadowfetchLinux/Shadow-Convert";
+pub const APP_WEBSITE: &str = "https://github.com/Shadowfetchapps/Shadow-Convert";
 pub const BINARY_NAME: &str = "shadow-convert";
 
 pub fn config_dir() -> Result<PathBuf> {

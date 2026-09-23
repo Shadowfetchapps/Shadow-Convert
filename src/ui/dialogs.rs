@@ -52,7 +52,7 @@ pub fn show_about(parent: &impl IsA<gtk::Window>) {
         .comments("Convert video, audio, and images locally. No account, no telemetry, no browser.")
         .license_type(gtk::License::MitX11)
         .website(paths::APP_WEBSITE)
-        .issue_url("https://github.com/ShadowfetchLinux/Shadow-Convert/issues")
+        .issue_url("https://github.com/Shadowfetchapps/Shadow-Convert/issues")
         .copyright("© 2026 Shadow Convert contributors")
         .build();
     about.present();
