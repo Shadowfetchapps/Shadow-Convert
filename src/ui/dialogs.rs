@@ -47,7 +47,7 @@ pub fn show_about(parent: &impl IsA<gtk::Window>) {
         .modal(true)
         .application_name(paths::APP_NAME)
         .application_icon(paths::APP_ICON)
-        .developer_name("ShadowfetchLinux")
+        .developer_name("Shadowfetch")
         .version(paths::APP_VERSION)
         .comments("Convert video, audio, and images locally. No account, no telemetry, no browser.")
         .license_type(gtk::License::MitX11)

@@ -46,7 +46,7 @@ strip = "debuginfo"
 
 [package.metadata.deb]
 name = "shadow-convert"
-maintainer = "Shadow Convert contributors <209457103+ShadowfetchLinux@users.noreply.github.com>"
+maintainer = "Shadow Convert contributors <209457103+Shadowfetchapps@users.noreply.github.com>"
 copyright = "2026 Shadow Convert contributors"
 license-file = ["LICENSE", "0"]
 extended-description = """Native GTK4 / libadwaita desktop app that converts video, audio, and images locally with FFmpeg. No account, no telemetry, no browser."""
