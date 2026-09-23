@@ -26,7 +26,7 @@ Screenshots belong in `docs/screenshots/` and must not include private filenames
 ## Install (user, no root)
 
 ```bash
-git clone https://github.com/ShadowfetchLinux/Shadow-Convert.git
+git clone https://github.com/Shadowfetchapps/Shadow-Convert.git
 cd Shadow-Convert
 cargo build --release
 ./scripts/install-user.sh
@@ -55,7 +55,7 @@ Optional: an FFmpeg build with NVENC, libwebp, libaom-av1, libmp3lame, libopus.
 - AVIF depends on ImageMagick AVIF support or FFmpeg `libaom-av1`
 - ICC color profiles are preserved when ImageMagick can do so; some FFmpeg still-image paths flatten toward a typical display encoding
 - Size estimates are approximate
-- Multi-file drops open the first file; use [Shadow Batch Processor](https://github.com/ShadowfetchLinux/Shadow-Batch-Processor) for bulk jobs
+- Multi-file drops open the first file; use [Shadow Batch Processor](https://github.com/Shadowfetchapps/Shadow-Batch-Processor) for bulk jobs
 - GIF conversion re-encodes and can be slow on long clips
 - Hardware encode is detected at runtime. It is never assumed from a particular GPU
 
